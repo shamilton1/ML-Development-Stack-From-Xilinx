@@ -1,4 +1,4 @@
-# Machine Learning Development Stack From Xilinx, Preview Edition
+# Xilinx ML Suite
 
 ### Tutorials
 - [Image Classification GoogLeNet-v1 Demo][]
