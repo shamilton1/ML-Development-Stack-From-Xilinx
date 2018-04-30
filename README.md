@@ -16,7 +16,11 @@
 
 ### Release Notes
 
-- xfdnn_18_03_19
+- xfdnn_18_04_02
+  - Added TesnforFlow Tutorial
+  - Added Yolov2 Models and Example
+
+- xfdnn_18_03_09
 	- Added Python Streaming and Multi-Process APIs and Tutorials
 	- Updates to Compiler and Quantizer
 
@@ -53,15 +57,15 @@
 - [AWS F1 Application Execution on Xilinx Virtex UltraScale Devices][]
 - [SDAccel Forums][]
 
-[Image Classification GoogLeNet-v1 Demo]:image_classification.md
-[DeepDetect REST Tutorial]:deepdetect_rest.md
-[DeepDetect Webcam Tutorial]:deepdetect_webcam.md
-[Quantization Tutorial]:quantize.md
-[Compiler Tutorial]:compile.md
-[Prototxt to FPGA Tutorial]:endtoend.md
-[Caffe Tutorial]:caffe.md
-[MxNet Tutorial]:mxnet.md
-[Using xfDNN Python APIs Tutorial]: pythonexample.md
+[Image Classification GoogLeNet-v1 Demo]:tutorials/image_classification.md
+[DeepDetect REST Tutorial]:tutorials/deepdetect_rest.md
+[DeepDetect Webcam Tutorial]:tutorials/deepdetect_webcam.md
+[Quantization Tutorial]:tutorials/quantize.md
+[Compiler Tutorial]:tutorials/compile.md
+[Prototxt to FPGA Tutorial]:tutorials/endtoend.md
+[Caffe Tutorial]:tutorials/caffe.md
+[MxNet Tutorial]:tutorials/mxnet.md
+[Using xfDNN Python APIs Tutorial]: tutorials/pythonexample.md
 
 [AWS F1 Application Execution on Xilinx Virtex UltraScale Devices]: https://github.com/aws/aws-fpga/blob/master/SDAccel/README.md
 [SDAccel Forums]: https://forums.xilinx.com/t5/SDAccel/bd-p/SDx

@@ -7,7 +7,7 @@ This example describes all the steps required to take a single trained CAFFE mod
 ## GoogLeNet-v1 Prototxt to FPGA Example
 
 1. Connect to F1
-2. Navigate to `/home/centos/xfdnn_18_03_19/caffe/`
+2. Navigate to `/home/centos/xfdnn_18_04_02/caffe/`
 	```
 	$ ls
 	classification.bin  kernelSxdnn_hw_f1_16b.xclbin  run_common.sh         run_places_16b.sh  xdnn_scheduler
@@ -36,7 +36,13 @@ This example describes all the steps required to take a single trained CAFFE mod
 6. This next command will execute the GoogLeNet-v1 compiler using a prototxt for CAFFE. It will generate code for the xfDNN configuration available on the Xilinx Machine Learning Development Stack, Preview Edition.
 
 	```
-	# python tests/xfdnn_compiler.py -n /xlnx/models/bvlc_googlenet_without_lrn/fp32/bvlc_googlenet_without_lrn_deploy.prototxt -s all -m 4 -i 28 -g /opt/caffe/network.cmd
+	# python tests/xfdnn_compiler.pyc \
+	-n /xlnx/models/bvlc_googlenet_without_lrn/fp32/bvlc_googlenet_without_lrn_deploy.prototxt \
+	-s all \
+	-m 4 \
+	-i 28 \
+	-g /opt/caffe/network.cmd \
+	--weights /xlnx/models/bvlc_googlenet_without_lrn/fp32/bvlc_googlenet_without_lrn.caffemodel
 	```
 
 	When successful, the /opt/caffe/network.cmd file will be created.
@@ -52,9 +58,7 @@ This example describes all the steps required to take a single trained CAFFE mod
 	```
 	# python quantize.pyc \
 	--deploy_model /xlnx/models/bvlc_googlenet_without_lrn/fp32/bvlc_googlenet_without_lrn_deploy.prototxt \
-	--train_val_model /xlnx/models/bvlc_googlenet_without_lrn/fp32/bvlc_googlenet_without_lrn_train_val.prototxt \
 	--weights /xlnx/models/bvlc_googlenet_without_lrn/fp32/bvlc_googlenet_without_lrn.caffemodel \
-	--quantized_train_val_model q.train_val.prototxt \
 	--calibration_directory ../../imagenet_val/ \
 	--calibration_size 8
 	```
@@ -79,6 +83,7 @@ This example describes all the steps required to take a single trained CAFFE mod
 Note: As used here, the prototxt batch size must match the number of input images (four in this example).
 
 
-[here]: launching_instance.md
-[compile]: compile.md
-[quantize]: quantize.md
+
+[here]: tutorials/launching_instance.md
+[compiler]: tutorials/compile.md
+[quantizer]: tutorials/quantize.md
