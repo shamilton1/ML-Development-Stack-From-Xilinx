@@ -30,9 +30,9 @@ pyxdnn/
 For instructions on launching and connecting to aws instances, see [here][].
 
 1. Connect to F1
-2. Navigate to `/home/centos/xfdnn_18_03_19/pyxdnn/examples/batch_classify/`
+2. Navigate to `/home/centos/xfdnn_18_04_02/pyxdnn/examples/batch_classify/`
 	```
-	$ cd xfdnn_18_03_19/pyxdnn/examples/batch_classify/
+	$ cd xfdnn_18_04_02/pyxdnn/examples/batch_classify/
 	$ ls
 	batch_classify.py  images  images_224  run.sh  synset_words.txt
 	```
@@ -221,9 +221,9 @@ For instructions on launching and connecting to aws instances, see [here][].
 For instructions on launching and connecting to aws instances, see [here][].
 
 1. Connect to F1
-2. Navigate to `/home/centos/xfdnn_18_03_19/pyxdnn/examples/batch_classify/`
+2. Navigate to `/home/centos/xfdnn_18_04_02/pyxdnn/examples/batch_classify/`
 	```
-	$ cd xfdnn_18_03_19/pyxdnn/examples/multinet/
+	$ cd xfdnn_18_04_02/pyxdnn/examples/multinet/
 	$ ls
 	mytest.json  run.sh  synset_words.txt  test_classify_async_multinet.py
 	```
