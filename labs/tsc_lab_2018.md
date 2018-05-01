@@ -83,7 +83,7 @@ pyxdnn/
 
 	This example runs eight images through the Python API in batch or streaming mode.
 
-	The `tsc.sh` example calls the API, and takes the following parameters:
+	The `lab_part1.sh` example calls the API, and takes the following parameters:
 	batch_classify.py
 	- `--xclbin` 		- Defines which FPGA binary to use. By Default, leave set to the binary in the example
 	- `--xlnxcfg` 	- FPGA config file
@@ -97,10 +97,10 @@ pyxdnn/
 
 	Exit the file, once you have become familiar with the script and its components.
 
-3. Execute the example, by running `sudo ./tsc.sh`. The
+3. Execute the example, by running `sudo ./lab_part1.sh`. The
 
 	```sh
-	$ sudo ./tsc.sh
+	$ sudo ./lab_part1.sh
 	Image Classification with GoogleNetv1 with 8 bit model
 	[XBLAS] # kernels: 1
 	[XDNN] using custom DDR banks 0,2,1,1
@@ -386,8 +386,8 @@ Ready? Let's begin.
 7. In this lab, you will use the `qunatize.pyc` tool. The parameters are:
     - `--deploy_model` - This input will be the prototxt for the network/model you want to quantize.
     - `--weights` - This input will the fp32  caffemodel.
-    - `calibration_directory` - This is where the original data set is located, which was used to train the model.
-    - `calibration_size` - This input is the number of images you want to provide for the calibration process.
+    - `--calibration_directory` - This is where the original data set is located, which was used to train the model.
+    - `--calibration_size` - This input is the number of images you want to provide for the calibration process.
 
     `--deploy_model` and `--weights` will be the same from step 5, located in the `models/flowers/` dir.
 
@@ -447,7 +447,7 @@ Ready? Let's begin.
 11. Below is what you should see next. There are comments to help provide the right input parameters. The default values are already filled in. The parameters you need, but you didn't generate are:
 
     - `-outsz`    - For flowers102 the number of categories is `102`
-    - `--labels`  - Lables are located here: `../../caffe/data/flowers102/synset_words.txt`
+    - `--labels`  - Labels are located here: `../../caffe/data/flowers102/synset_words.txt`
     - `--imagedir`- For test images of flowers, use this dir: `../../caffe/examples/flowers`
 
     ```sh
@@ -478,7 +478,7 @@ Ready? Let's begin.
     ```
 
 
-12. Once complete, save and exit `lab_part2.sh`. Now execute your run with `sudo ./lab_part2.tsc`. If it runs successfully you should the classification results for a number of flowers, which look like this:
+12. Once complete, save and exit `lab_part2.sh`. Now execute your run with `sudo ./lab_part2.tsc`. If it runs successfully you should the classification results for a number of flowers, which looks like this:
     ```sh
     ---------- Prediction 0 for /home/centos/xfdnn_18_04_02/models/flowers102/../../caffe/examples/flowers/dahlia_03000.jpg
     1.0000 - "pink-yellow dahlia"
