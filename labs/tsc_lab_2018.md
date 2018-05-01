@@ -493,7 +493,7 @@ Ready? Let's begin.
 
 
 
-###Congrats! You have compiled and quantized a model and used the Python APIs to deploy it.
+### Congrats! You have compiled and quantized a model and used the Python APIs to deploy it.
 
 
 
