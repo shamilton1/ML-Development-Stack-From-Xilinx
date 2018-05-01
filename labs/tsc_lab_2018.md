@@ -11,7 +11,7 @@ This lab will follow tutorials from the [Xilinx ML Suite][].
 
 ## Launching Your ML Suite Instance
 
-something, something, something darkside....
+something, something, something darkside.... 
 
 ## Part 1 - Image Classification with Python APIs
 In the first part, you will run through the [Batch Classification example][], using the xfDNN Python APIs.
