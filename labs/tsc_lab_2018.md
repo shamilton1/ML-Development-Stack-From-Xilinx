@@ -50,7 +50,7 @@ If you have not received that email, please contact an Xilinx event staff member
     - You will be using this IP address to connect to your instance.
     - The **IPv4 Public IP** address is displayed in EC2 Console next to the instance status. Copy the IP address.
 
-    ![ip](imgs/ipv4.png)
+    ![ip](imgs/ipv4.PNG)
 
 #### Connect to your instance using a ssh client
 
@@ -86,20 +86,20 @@ You should now be connected to the remote F1 instance running Centos 7.
 2. Launch Putty. If you don't have it, [download from here][].
 3. Enter **centos@** followed by your **IPv4 Public Address** in the **Host Name** field. **Connection Type** needs to be set to **SSH** and **Port** should be left to the default **22**.
 
-    ![](imgs/putty_ip.png)
+    ![](imgs/putty_ip.PNG)
 
 4. Next, on the left under **Category**, click the `+` next to **SSH** and click on **Auth**
 5. Click on **Broswe** and provide the path to **tsc_lab.ppk** you downloaded earlier. Leave everything else as default.
 
-    ![](imgs/putty_auth.png)
+    ![](imgs/putty_auth.PNG)
 
 6. If you are behind the Xilinx Firewall, click **proxy** from the left and select **HTTP** under **Proxy Type**. Leave everything else as default.
 
-    ![](imgs/putty_proxy.png)
+    ![](imgs/putty_proxy.PNG)
 
 7. Now Click **Open** at the bottom. A Window will pop up, click **Yes** to proceed.
 
-    ![](imgs/putty_rsa.png)
+    ![](imgs/putty_rsa.PNG)
 
 You should now be connected to the remote F1 instance running Centos 7.
 
