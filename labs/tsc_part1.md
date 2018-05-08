@@ -204,7 +204,7 @@ pyxdnn/
 	[XDNN]   exec_xdnn      : 39.57 ms
 	[XDNN]   read_from_fpga : 0.06 ms
 	```
-This shows the write, execution and read times from each of the four xDNN kernels on the FPGA. By default, this example runs eight images (two per kernel). Because each kernel needs to be initialized for the network/model to be run, it has a high processing time. Feeding more images into it will show the **real** processing time. For example, if you change this to run more images, you will see the following results:
+	This shows the write, execution and read times from each of the four xDNN kernels on the FPGA. By default, this example runs eight images (two per kernel). Because each kernel needs to be initialized for the network/model to be run, it has a high processing time. Feeding more images into it will show the **real** processing time. For example, if you change this to run more images, you will see the following results:
 	```sh
 	[XDNN] FPGA metrics (0/0/0)
 	[XDNN]   write_to_fpga  : 0.21 ms
