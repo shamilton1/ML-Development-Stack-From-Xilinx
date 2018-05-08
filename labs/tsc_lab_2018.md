@@ -87,7 +87,7 @@ You should now be connected to the remote F1 instance running Centos 7.
 2. Launch PuTTY. If required, [download from here][].
 3. Enter the following PuTTY session configuration details: 
 
-* **Host Name**field: Enter **centos@** followed by your **IPv4 Public Address**. 
+* **Host Name** field: Enter **centos@** followed by your **IPv4 Public Address**. 
 
 * **Connection Type**: Set to **SSH**
 
