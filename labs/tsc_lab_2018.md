@@ -55,7 +55,7 @@ If you have not received that email, please contact an Xilinx event staff member
 
 #### Connect to your instance using a ssh client
 
-The instance you just started can be connected to by ssh. You can do this in Windows or Linux as follows:
+You can now connect to your instance using ssh. You can do this in Linux or Windows as follows:
 
 ##### Linux
 1. Open a Terminal.
@@ -64,18 +64,18 @@ The instance you just started can be connected to by ssh. You can do this in Win
 
 3. Execute the following ssh connection command:
 
-    Use if you are behind Xilinx Firewall:
+    Use the following command if you are behind a Xilinx Firewall:
     ```sh
     ssh -i tsc_lab.pem -o "ProxyCommand /usr/bin/ncat --proxy-type socks4 --proxy proxy:1080 %h %p" centos@<public-ip>
     ```
 
-    Use if you are *not* behind Xilinx Firewall:
+    Use the following command if you are *not* behind a Xilinx Firewall:
     ```sh
     ssh -i tsc_lab.pem -o centos@<public-ip>
     ```
     Replace `<public-ip>` with the **IPv4 Public IP** address for the instance given to you.
 
-4. Type `yes` when asked if you want to connect
+4. Type `yes` when prompted to connect.
     ```sh
     RSA key fingerprint is f9:f4:05:da:40:99:00:9d:1e:8f:95:de:89:6a:3f:cd.
     Are you sure you want to continue connecting (yes/no)? yes
@@ -84,7 +84,7 @@ You should now be connected to the remote F1 instance running Centos 7.
 
 ##### Windows
 1. Download [tsc_lab.ppk][] and save it in your current working directory.
-2. Launch Putty. If you don't have it, [download from here][].
+2. Launch Putty. If required, [download from here][].
 3. Enter **centos@** followed by your **IPv4 Public Address** in the **Host Name** field. **Connection Type** needs to be set to **SSH** and **Port** should be left to the default **22**.
 
     ![](imgs/putty_ip.PNG)
