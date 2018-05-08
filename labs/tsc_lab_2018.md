@@ -41,7 +41,7 @@ If you have not received that email, please contact an Xilinx event staff member
 7. Click **Sign In**.
     - You should now be logged in the AWS EC2 Console and you should see an **f1.2xlarge** instance in the **stopped** state.
 
-8. Start the instance by choosing the **Actions** button, then select **Instance State** and **Start**.
+8. Start the instance by choosing the **Actions** button, then select **Instance State** > **Start**.
 
     ![Start](imgs/start1.png?)
 
@@ -73,7 +73,7 @@ You can now connect to your instance using ssh. You can do this in Linux or Wind
     ```sh
     ssh -i tsc_lab.pem -o centos@<public-ip>
     ```
-    Replace `<public-ip>` with the **IPv4 Public IP** address for the instance given to you.
+    Replace `<public-ip>` with the **IPv4 Public IP** address for the instance assigned to you.
 
 4. Type `yes` when prompted to connect.
     ```sh
@@ -84,8 +84,8 @@ You should now be connected to the remote F1 instance running Centos 7.
 
 ##### Windows
 1. Download [tsc_lab.ppk][] and save it in your current working directory.
-2. Launch Putty. If required, [download from here][].
-3. Enter **centos@** followed by your **IPv4 Public Address** in the **Host Name** field. **Connection Type** needs to be set to **SSH** and **Port** should be left to the default **22**.
+2. Launch PuTTY. If required, [download from here][].
+3. In the **Basic options for your PuTTY session**, enter the following: Enter **centos@** followed by your **IPv4 Public Address** in the **Host Name** field. **Connection Type** needs to be set to **SSH** and **Port** should be left to the default **22** see the following figure for reference.
 
     ![](imgs/putty_ip.PNG)
 
