@@ -1,5 +1,5 @@
 # Part 2: Image Classification with Custom models
-In Part 2, you will find out how to use a custom model with the Image Classification GoogLeNetv1 example from above. Here you will use the same network, but will provide a new model. For this, you will first compile the network again, then quantize a different 32-bit model and execute with the same Python APIs. The model this lab will use is FLowers102, but any custom model trained from GoogLeNetv1 would work here.
+In Part 2, you will find out how to use a custom model with the Image Classification GoogLeNetv1 example from above. Here you will use the same network, but will provide a new model. For this, you will first compile the network again, then quantize a different 32-bit model and execute with the same Python APIs. The model this lab will use is Flowers102, but any custom model trained from GoogLeNetv1 would work here.
 
 This part will use the same pyXDNN dir:
 
