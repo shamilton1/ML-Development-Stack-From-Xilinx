@@ -1,5 +1,5 @@
 # Part 1 - Image Classification with Python APIs
-In the first part, you will run through the [Batch Classification example][], using the xfDNN Python APIs.
+In Part 1, you will run through the [Batch Classification example][], using the xfDNN Python APIs.
 
 Directory overview of this tutorial:
 
