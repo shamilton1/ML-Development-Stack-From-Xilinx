@@ -29,7 +29,7 @@ pyxdnn/
 	batch_classify.py  images  images_224  run.sh  synset_words.txt  lab_part1.sh lab_part2.sh
 	```
 
-2. Open `lab_part1.sh` with the text editor of your choice. These labs will use nano, as it's a simple editor. When using nano, remember to use `sudo` to launch it, so you can save your edits. Execute `sudo nano lab_part1.sh` to view the contents of the script.
+2. Open `lab_part1.sh` with a text editor of your choice. These labs use nano as it's a simple editor. When using nano, remember to use `sudo` to launch it, so you can save your edits. Execute `sudo nano lab_part1.sh` to view the contents of the script.
 
 	The top of the file includes environment and setup commands. No changes are required here.  
 	```sh
@@ -45,7 +45,7 @@ pyxdnn/
 	export XILINX_OPENCL=$PYXDNN_ROOT
 	source $PYXDNN_ROOT/setup.sh
 	```
-	Beginning on line 14, you will see the python command and parameters needed to run the Image Classification example.
+	Beginning on line 14, you will see the python command and parameters required to run the Image Classification example.
 	```sh
 	# --------------------------------------------------------------------
 	# Part 1: Running GoogleNetv1 with Standard 1000 class model
