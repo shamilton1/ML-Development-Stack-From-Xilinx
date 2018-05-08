@@ -97,7 +97,7 @@ You should now be connected to the remote F1 instance running Centos 7.
 
     ![](imgs/putty_ip.PNG)
 
-4. Next, on the left under **Category**, click the `+` next to **SSH** and click on **Auth**
+4. Under **Connection**, click the `+` next to **SSH** to expand, and click **Auth**
 5. Click on **Broswe** and provide the path to **tsc_lab.ppk** you downloaded earlier. Leave everything else as default.
 
     ![](imgs/putty_auth.PNG)
