@@ -21,7 +21,7 @@ pyxdnn/
         └── test_classify_async_multinet.py
 </pre>
 
-1. Navigate to: /home/centos/xfdnn_18_04_02/pyxdnn/examples/batch_classify/
+1. Navigate to: `/home/centos/xfdnn_18_04_02/pyxdnn/examples/batch_classify/`
 
 	```bash
 	$ cd xfdnn_18_04_02/pyxdnn/examples/batch_classify/
