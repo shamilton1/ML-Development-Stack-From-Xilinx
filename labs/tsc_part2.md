@@ -1,7 +1,7 @@
 # Part 2: Image Classification with Custom models
-In Part 2, you will find out how to use a custom model with the Image Classification GoogLeNetv1 example from above. Here you will use the same network, but will provide a new model. For this, you will first compile the network again, then quantize a different 32-bit model and execute with the same Python APIs. The model this lab will use is Flowers102, but any custom model trained from GoogLeNetv1 would work here.
+In Part 2, you will find out how to use a custom model with the Image Classification GoogLeNetv1 example from above. Here you will use the same network, but will provide a new model. For this, you will first compile the network again, then quantize a different 32-bit model and execute with the same Python APIs. The model this lab will use is Flowers102, but any custom model trained from GoogLeNetv1 would work.
 
-This part will use the same pyXDNN dir:
+This part uses the same pyXDNN dir:
 
 ```sh
 pyxdnn/
@@ -21,7 +21,7 @@ pyxdnn/
         └── test_classify_async_multinet.py
 ```
 
-In this section you will use the xfDNN Tools located in the `/xfdnn_18_04_02/xfdnn_tools/` dir.
+You will use the xfDNN Tools located in the `/xfdnn_18_04_02/xfdnn_tools/` dir.
 ```sh
 xfdnn_tools/
 ├── compile
@@ -57,7 +57,7 @@ xfdnn_tools/
     └── run_quantize.sh
 ```
 
-This part will also look at other included models in the `/xfdnn_18_04_02/models/` dir. In the models dir, you have access to four models: GoogLeNetv1, ResNet50, Flowers102 and Places365. Each model includes the original fp32 model along with pre-quantized 16 and 8-bit versions. In this example, you will recompile and quantize the flowers102 model from the original fp32 model and deploy it using the Python APIs from part 1.
+This part will also look at other included models in the `/xfdnn_18_04_02/models/` dir. This directory contains four models: GoogLeNetv1, ResNet50, Flowers102 and Places365. Each model includes the original fp32 model along with pre-quantized 16 and 8-bit versions. In this example, you will recompile and quantize the flowers102 model from the original fp32 model and deploy it using the Python APIs from part 1.
 
 ```sh
 /xfdnn_18_04_02/models/
@@ -102,9 +102,11 @@ Ready? Let's begin.
 	# cd /xlnx/xfdnn_tools/compile/
 	```
 
-5. The next command will execute the GoogLeNet-v1 compiler using a prototxt for caffe. Here you will pass the GoogLeNetv1 prototxt and the caffemodel from the `models/flowers102` dir. **Note**: In step 2 you entered the caffe container, which is needed to run the xfDNN tools. Outside the container the dir structure is `/home/centos/xfdnn_18_04_02/...` in the container this maps to `/xlnx/`.
+5. The next command will execute the GoogLeNet-v1 compiler using a prototxt for caffe. Here, you will pass the GoogLeNetv1 prototxt and the caffemodel from the `models/flowers102` dir. 
 
-    The compiler version you will use is `xf_dnn_compiler_inflamable.pyc`. The parameters are:
+**Note**: In step 2 you entered the caffe container, which is needed to run the xfDNN tools. Outside the container, the dir structure is `/home/centos/xfdnn_18_04_02/...`, within the container this maps to `/xlnx/`.
+
+    The compiler version you will use is `xf_dnn_compiler_inflamable.pyc`. The associated parameters are:
     - `[-n,]` - Input prototxt for compiler
     - `[-s,]` - Strategies for compiler (default: all)
     - `[-m,]` - On-chip Memory available in MB (default: 4)
@@ -113,11 +115,11 @@ Ready? Let's begin.
     - `[-g,]` -  Output commands in XFDNN test and json
     - `[-o,]` -  Output png file of graph read by compiler (optional)
 
-    For the `-n` and `-w` parameters, use the deploy prototxt and caffemodel from the `/flowers102` dir. (reference the dir tree at the beginning of part 2).
+    For the `-n` and `-w` parameters, use the deploy prototxt and caffemodel respectively from the `/flowers102` dir. (see the dir tree at the beginning of part 2.)
 
     `-s`, `-m`, `-i` are all set to the default values of `all`, `4` and `28` respectively.
 
-    `-g` This is the output of the compiler and needed for use with the Python APIs for deployment. You can give this file a name, and save it back in the `modes/flowers102` dir so we can find it later.
+    `-g` This is the output of the compiler and is needed for use with the Python APIs in deployment. Assign this file a name and save it back in the `modes/flowers102` directory so it can be located later.
 
     `-o` This will produce a picture of the graph for reference. Its an optional step. Give this a name as well, in the `/models/flowers102` dir.
 
@@ -131,7 +133,7 @@ Ready? Let's begin.
     -o /xlnx/models/flowers102/flowers102_graph.png
     ```
 
-    You will get a long string of console messages while the compiler is running, but at the end you should see `SUCCESS`. If you don't an error message will explain if you had any problems with your arguments.
+    You will receive a long string of console messages while the compiler is running, but on completion you should see `SUCCESS`. If you don't, an error message will explain if you had any problems with your arguments.
 
     To verify the success of this step, check the `models/flowers102/` dir for the generated files:
 
@@ -174,7 +176,7 @@ Ready? Let's begin.
     --calibration_size 8
   	```
 
-	If this runs successfully the end of the console messages you will see:
+	If this runs successfully you will see the following at the end of the console messages:
     ```sh
     Passing
     Writing output files to /xlnx/models/flowers102/fp32/bvlc_googlenet_without_lrn_deploy.json...
@@ -193,7 +195,7 @@ Ready? Let's begin.
     --mean_value [104.0,117.0,123.0]
     --input_scale 1.0
     ```
-    This will recap the quatization run, and will share where the output is located. Writing output files to `/xlnx/models/flowers102/fp32/bvlc_googlenet_without_lrn_deploy.json.` This JSON file is required to deploying the quantized model.
+    This will recap the quatization run, and will share where the output is located. Output files will be written to `/xlnx/models/flowers102/fp32/bvlc_googlenet_without_lrn_deploy.json.` This JSON file is required to deploy the quantized model.
 
     It will also store the new weights where the original model was located. For this example that is in the `../fp32/` dir. The new weights data dir will be appended with the suffix `_data`. Verify that `../fp32/bvlc_googlenet_without_lrn.caffemodel_data/` is now created. This will be the path that is provided to the Python APIs for deployment.
 
@@ -248,7 +250,7 @@ Ready? Let's begin.
     ```
 
 
-12. When complete, save and exit `lab_part2.sh`. Now execute your run with `sudo ./lab_part2.tsc`. If it runs successfully you should the classification results for a number of flowers, which looks like this:
+12. When complete, save and exit `lab_part2.sh`. Now execute your run with `sudo ./lab_part2.tsc`. If it runs successfully you should receive the classification results for a number of flowers, which looks like this:
     ```sh
     ---------- Prediction 0 for /home/centos/xfdnn_18_04_02/models/flowers102/../../caffe/examples/flowers/dahlia_03000.jpg
     1.0000 - "pink-yellow dahlia"
