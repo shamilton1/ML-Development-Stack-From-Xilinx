@@ -1,5 +1,5 @@
 # Part 2: Image Classification with Custom models
-In this part, you will take a look at how to use a custom model with Image Classification GoogLeNetv1 example from above. Here you will use the same network, but will provide a new model. For this, you will first compile the network again, then quantize a different 32bit model and execute with the same Python APIs. The model this lap will use is FLowers102, but any custom model trained from GoogLeNetv1 would work here.
+In Part 2, you will find out how to use a custom model with the Image Classification GoogLeNetv1 example from above. Here you will use the same network, but will provide a new model. For this, you will first compile the network again, then quantize a different 32-bit model and execute with the same Python APIs. The model this lab will use is FLowers102, but any custom model trained from GoogLeNetv1 would work here.
 
 This part will use the same pyXDNN dir:
 
@@ -57,7 +57,7 @@ xfdnn_tools/
     └── run_quantize.sh
 ```
 
-This part will also look at other included models in the `/xfdnn_18_04_02/models/` dir. In the models dir, you have access to 4 models: GoogLeNetv1, ResNet50, Flowers102 and Places365. Each model comes with the original fp32 model along with pre-quantized 16bit and 8bit versions. In this example, you will recompile and quantize the flowers102 model from the original fp32 model and deploy it using the Python APIs from part 1.
+This part will also look at other included models in the `/xfdnn_18_04_02/models/` dir. In the models dir, you have access to four models: GoogLeNetv1, ResNet50, Flowers102 and Places365. Each model includes the original fp32 model along with pre-quantized 16 and 8-bit versions. In this example, you will recompile and quantize the flowers102 model from the original fp32 model and deploy it using the Python APIs from part 1.
 
 ```sh
 /xfdnn_18_04_02/models/
