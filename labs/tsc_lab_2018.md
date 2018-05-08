@@ -11,7 +11,7 @@ The lab is in two parts:
 
 This lab will follow tutorials from the [Xilinx ML Suite][].
 
-## Launching Your ML Suite Instance
+## Launching your ML Suite Instance
 
 In this lab you will start a pre-configured EC2 F1 instance and connect to it using a ssh client. Once connected, you will be able to run the labs in Parts 1 and 2.
 
@@ -30,7 +30,7 @@ If you have not received that email, please contact an Xilinx event staff member
 2. Click on the link to your preconfigured instance.
     - You will be asked to sign-in before accessing your instance in the AWS EC2 Console.
 
-3. In the AWS sign-in page, enter the **Account ID** which was emailed to you
+3. In the AWS sign-in page, enter the **Account ID** which was emailed to you.
 
 4. Click **Next**.
 
@@ -41,22 +41,21 @@ If you have not received that email, please contact an Xilinx event staff member
 7. Click **Sign In**.
     - You should now be logged in the AWS EC2 Console and you should see an **f1.2xlarge** instance in the **stopped** state.
 
-8. Start the instance by choosing the **Actions** button, then select **Instance State** and then **Start**.
+8. Start the instance by choosing the **Actions** button, then select **Instance State** and **Start**.
 
     ![Start](imgs/start1.png?)
 
-    - Allow about 10 seconds for the instance to start and be in the **Running** state.
-    - If needed, click the **Refresh** icon (![Refresh](imgs/refresh2.png)) in the top-right corner of the EC2 Console to update the instance status information.
+    - Allow about 10 seconds for the instance to start and to enter the **Running** state.
+    - If required, click the **Refresh** icon (![Refresh](imgs/refresh2.png)) in the top-right corner of the EC2 Console to update the instance status information.
 
-9. Once the instance is running, find and note the **IPv4 Public IP** address of your instance.
-    - You will be using this IP address to connect to your instance.
-    - The **IPv4 Public IP** address is displayed in EC2 Console next to the instance status. Copy the IP address.
+9. When the instance is running, find and note the **IPv4 Public IP** address of your instance. This is displayed in EC2 Console next to the instance status.
+    - This IP address is used to connect to your instance.
 
     ![ip](imgs/ipv4.PNG)
 
 #### Connect to your instance using a ssh client
 
-The instance you just started can be connected to by ssh. You can do this in Windows or Linux.
+The instance you just started can be connected to by ssh. You can do this in Windows or Linux as follows:
 
 ##### Linux
 1. Open a Terminal.
