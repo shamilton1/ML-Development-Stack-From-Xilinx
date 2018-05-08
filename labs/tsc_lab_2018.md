@@ -98,11 +98,11 @@ You should now be connected to the remote F1 instance running Centos 7.
     ![](imgs/putty_ip.PNG)
 
 4. Under **Connection**, click the `+` next to **SSH** to expand, and click **Auth**.
-5. Click **Broswe** and provide the path to the **tsc_lab.ppk** file you downloaded earlier. Leave everything else as default.
+5. Click **Browse** and provide the path to the **tsc_lab.ppk** file you downloaded earlier. Leave everything else as default. See the following figure for reference.
 
     ![](imgs/putty_auth.PNG)
 
-6. If you are behind the Xilinx Firewall, click **Proxy** on the left and select **HTTP** as the **Proxy type**. Leave everything else as default.
+6. If you are behind the Xilinx Firewall, click **Proxy** on the left and select **HTTP** as the **Proxy type**. Leave everything else as default. See the following figure for reference.
 
     ![](imgs/putty_proxy.PNG)
 
