@@ -85,7 +85,14 @@ You should now be connected to the remote F1 instance running Centos 7.
 ##### Windows
 1. Download [tsc_lab.ppk][] and save it in your current working directory.
 2. Launch PuTTY. If required, [download from here][].
-3. In the **Basic options for your PuTTY session**, enter the following: Enter **centos@** followed by your **IPv4 Public Address** in the **Host Name** field. **Connection Type** needs to be set to **SSH** and **Port** should be left to the default **22** see the following figure for reference.
+3. Enter the following PuTTY session configuration details: 
+**Host Name**field: Enter **centos@** followed by your **IPv4 Public Address**. 
+
+**Connection Type** needs to be set to **SSH**
+
+**Port** should be left to the default **22** 
+
+See the following figure for reference.
 
     ![](imgs/putty_ip.PNG)
 
