@@ -106,7 +106,7 @@ You should now be connected to the remote F1 instance running Centos 7.
 
     ![](imgs/putty_proxy.PNG)
 
-7. Click **Open** at the bottom of the window. The following pop-up window will display. Click **Yes** to proceed.
+7. Click **Open** at the bottom of the window. The following pop-up window will display. Click **Yes** to proceed. See the following figure for reference.
 
     ![](imgs/putty_rsa.PNG)
 
