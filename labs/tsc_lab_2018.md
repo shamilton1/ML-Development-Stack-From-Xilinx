@@ -1,19 +1,17 @@
 # Xilinx  ML Suite TSC Lab 2018
 
 ## Introduction
-Welcome to the Xilinx ML Suite TSC Lab. By completing this lab, you will gain valuable hands on experience with using the Xilinx ML Suite. This lab covers how to use Python APIs to deploy the included models, as well as how to compile and quantize custom models with the xfDNN Python tools.
+Welcome to the Xilinx ML Suite TSC Lab. By completing this lab, you will gain valuable hands on experience in using the Xilinx ML Suite. This lab covers how to use Python APIs to deploy the included models, as well as how to compile and quantize custom models with the xfDNN Python tools.
 
 The lab is divided into two parts:
 
-**Part 1**: Uses the Python APIs to run the included Image Classification examples with GoogLeNetv1 and pre-quantized 8-bit model.
+**Part 1**: Uses Python APIs to run the included Image Classification examples with GoogLeNetv1 and pre-quantized 8-bit model.
 
 **Part 2**: Uses the xfDNN tools to compile and quantize a custom model to be used with the Image Classification example in Part 1.
 
 This lab will follow tutorials from the [Xilinx ML Suite][].
 
 ## Launching your ML Suite Instance
-
-In this lab you will start a pre-configured EC2 F1 instance and connect to it using a ssh client. Once connected, you will be able to run the labs in Parts 1 and 2.
 
 For this event, each registered participant has been attributed a preconfigured EC2 F1 instance and should have received an email with the following details:
 
@@ -22,6 +20,8 @@ For this event, each registered participant has been attributed a preconfigured 
 - Link to access a preconfigured EC2 F1 instance
 
 If you have not received that email, please contact an Xilinx event staff member now.
+
+Prior to running the labs, you need to start a pre-configured EC2 F1 instance and connect to it using a ssh client. Once connected, you will be able to run the labs in Parts 1 and 2.
 
 #### Start a preconfigured EC2 F1 instance
 
