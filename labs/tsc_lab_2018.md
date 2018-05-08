@@ -5,9 +5,9 @@ Welcome to the Xilinx ML Suite TSC Lab. By completing this lab, you will gain va
 
 The lab is in two parts:
 
-Part 1: Using the Python APIs to run the included Image Classification examples with GoogLeNetv1 and pre-quantized 8-bit model.
+**Part 1**: Using the Python APIs to run the included Image Classification examples with GoogLeNetv1 and pre-quantized 8-bit model.
 
-Part 2: Using the xfDNN tools to compile and quantize a custom model to be used with the Image Classification example in Part 1.
+**Part 2**: Using the xfDNN tools to compile and quantize a custom model to be used with the Image Classification example in Part 1.
 
 This lab will follow tutorials from the [Xilinx ML Suite][].
 
